@@ -1,17 +1,19 @@
 body, html{
-	height : 100%;
+    background-color: #2F4454;
+    width : 100%;
     margin : 0;
 }
 
-body{
-	background-color: #2F4454;
+nav {
+    display: flex;
+    justify-content: center;
 }
 
 .tl{
 
 }
 
-ul{
+.navbar ul{
     margin: 2em;
     width: 60%;
     color: white;
@@ -20,12 +22,12 @@ ul{
     justify-content: space-around;
 }
 
-li{
+.navbar li{
     display: flex;
     float: left;
 }
 
-li a{
+.navbar li a{
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     color: white;
