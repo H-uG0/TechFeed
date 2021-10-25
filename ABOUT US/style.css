@@ -1,0 +1,38 @@
+body {
+    background-color: #2f4454;
+}
+
+.tltoreview{
+    height : 20%;
+
+}
+
+.navbartotl{
+    height : 20%;
+    width : 110%;
+    padding : 0;
+}
+.spacer{
+    aspect-rato : 960/300;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width : 110%;
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+}
+
+.image1 {
+    max-width: 30%;
+	height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre1 {
+    color: white;
+}
+
