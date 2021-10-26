@@ -1,0 +1,25 @@
+body {
+    background-color: #2f4454;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 200%;
+}
+.image1 {
+    max-width: 30%;
+	height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre1 {
+    color: white;
+}
+
