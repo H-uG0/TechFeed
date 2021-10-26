@@ -5,6 +5,45 @@
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<title>TechFeed</title>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+	<script>
+		fetch("https://gnews.io/api/v4/search?q=technology&token=13c3018e3c272c8e867916df81791fb5")
+				.then(function (response) {
+		        	return response.json();
+		    	})
+		    	.then(function (data) {
+		       	 	console.log(data);
+		       	 	//document.getElementById('output').style.width = data.articles.length*24+"em";
+		       	 	for(var article in data.articles){
+		       	 		document.getElementById('output').innerHTML+="<div class='card'>\
+		       	 													<img src='"+data.articles[article].image+"'>\
+		       	 													<a href='"+data.articles[article].url+"'>"
+		       	 													+data.articles[article].title+"</a>\
+		       	 													<p>"+data.articles[article].content+"</p>\
+		       	 													</div>";
+		       	 	}
+
+		    	});
+
+			function getNews(){
+				fetch("https://gnews.io/api/v4/search?q=technology&token=1b18c12af998aa12940313754d2d4b2f")
+				.then(function (response) {
+		        	return response.json();
+		    	})
+		    	.then(function (data) {
+		       	 	console.log(data);
+		       	 	//document.getElementById('output').style.width = data.articles.length*24+"em";
+		       	 	for(var article in data.articles){
+		       	 		document.getElementById('output').innerHTML+="<div class='card'>\
+		       	 													<img src='"+data.articles[article].image+"'>\
+		       	 													<a href='"+data.articles[article].url+"'>"
+		       	 													+data.articles[article].title+"</a>\
+		       	 													<p>"+data.articles[article].content+"</p>\
+		       	 													</div>";
+		       	 	}
+
+		    	});
+			}
+	</script>
 </head>
 <body>
     <nav class="navbar">
@@ -39,7 +78,37 @@
 	</div>
 
 	<section class = "tl">
+
+
+		<div id = "output">
+		</div>
+		<button id="refresh" onclick='getNews()'>
+			<svg id="visual" viewBox="0 0 900 300" width="300%" height="300%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+				<g  transform="translate(483.65387399043385 120.0690999623921)">
+					<path id="blobone" d="M35.2 -48.4C44.1 -41.9 48.8 -29.7 64.9 -13.3C81 3.1 108.5 23.7 107.3 37.2C106.1 50.8 76.3 57.3 53.6 72.6C31 87.9 15.5 112 -1.8 114.4C-19 116.8 -38 97.6 -50.5 79.1C-63.1 60.5 -69.1 42.4 -83.4 21.6C-97.6 0.8 -120.2 -22.8 -113.4 -34.8C-106.7 -46.8 -70.7 -47.3 -46.9 -48.9C-23.1 -50.5 -11.6 -53.2 0.8 -54.3C13.1 -55.4 26.3 -54.8 35.2 -48.4" fill="#BB004B">
+					</path>
+				</g>
+				<g  style="visibility:hidden" transform="translate(483.28719016513037 121.82745363018189)">
+					<path id="blobtwo" d="M35 -45.6C48 -38.8 63 -32.1 71.5 -19.9C79.9 -7.8 81.8 9.7 81.1 30.9C80.5 52.1 77.3 77 63.3 97.5C49.4 118 24.7 134 -2.2 136.9C-29 139.9 -58 129.8 -73.4 109.8C-88.7 89.8 -90.5 59.9 -84.9 37.1C-79.3 14.2 -66.3 -1.5 -62.5 -22.6C-58.8 -43.6 -64.4 -70 -55.5 -78.1C-46.6 -86.2 -23.3 -76.1 -6.1 -67.6C11 -59.2 22 -52.3 35 -45.6" fill="#BB004B">
+
+					</path>
+				</g>
+			</svg>
+			Refresh
+			<script>
+				var tween = KUTE.fromTo(
+				"#blobone",
+				{path: "#blobone"},
+				{path: "#blobtwo"},
+				{duration: 2000,
+                yoyo: true,
+                repeat:Infinity,
+            	}
+				).start();
+			</script>
+		</button>
 	</section>
+
 
 	<div class = "spacer tltoreview">
 		<svg id="visual1" viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -62,17 +131,5 @@
 
 	<section class = "review">
 	</section>
-
-</body>
-<script>
-	function getNews(){
-		fetch("https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=12487dc04261441792f718f644d60c80")
-		.then(a=>a.json())
-		.then(response=>{
-			for(var i=0; i<response.articles.length; i++){
-				document.getElementById("output").innerHTML+="<div style='padding-top:20px';><img style='float:left;width:150px;' src='"+response.articles[i].urlToImage+"'><h1>"+response.articles[i].title+"</h1>"+response.articles[i].source.name+"<br>"+response.articles[i].description+"<a href='"+response.articles[i].url+"' target='_blank'"+response.articles[i]
-			}
-		})
-	}
-</script>
+	</body>
 </html>
