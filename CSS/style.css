@@ -4,13 +4,16 @@ body, html{
     margin : 0;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-}
-
 .tl{
 
+}
+
+.navbar{
+	background-color: #1C3334;
+	display : flex;
+	align-items: center;
+	justify-content: center;
+	width : 100%;
 }
 
 .navbar ul{
@@ -18,20 +21,28 @@ nav {
     width: 60%;
     color: white;
     font-size: 12px;
-    display: flex;
-    justify-content: space-around;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-between;
+	list-style-type: none;
 }
 
 .navbar li{
-    display: flex;
-    float: left;
+	border: solid;
+	border-color: #1C3334;
+	width: 100px;
 }
 
 .navbar li a{
     font-family: Arial, Helvetica, sans-serif;
-    display: block;
     color: white;
-    text-decoration: none;
+	text-decoration: none;
+}
+
+@media all and (max-width : 500px){
+	.navbar{height : 100%;}
 }
 
 .spacer{
@@ -58,35 +69,8 @@ nav {
 	background-color: #2E151B;
 }
 
-.navbar{
-	background-color: #1C3334;
-	display : flex;
-	align-items: center;
-	justify-content: center;
-	width : 100%;
-}
-
 svg{
 	width : 100%;
-}
-.navbar ul{
-    width: 60%;
-    color: white;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar li{
-    display: flex;
-    float: left;
-}
-
-.navbar li a{
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    color: white;
-    text-decoration: none;
 }
 
 #output{
