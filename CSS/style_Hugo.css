@@ -1,0 +1,176 @@
+
+body, html{
+	height : 100%;
+	margin : 0;
+}
+
+body{
+	background-color: #2F4454;
+}
+
+.spacer{
+	aspect-rato : 960/300;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height : 10%;
+}
+
+.tltoreview{
+	width : 100%;
+	padding : 0;
+
+}
+
+.navbartotl{
+	height : auto;
+	padding : 0;
+	width : 100%;
+}
+
+.review{
+	background-color: #2E151B;
+}
+
+.navbar{
+	background-color: #1C3334;
+	display : flex;
+	align-items: center;
+	justify-content: center;
+	width : 100%;
+}
+
+svg{
+	width : 100%;
+	position : fixed;
+	z-index : 253;
+}
+
+#visual1{
+	bottom : 0px;
+}
+
+.navbar ul{
+    width: 60%;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li{
+    display: flex;
+    float: left;
+}
+
+.navbar li a{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#output{
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow-x: scroll;
+	overflow:auto;
+	width: 100%;
+	margin-top: 10vh;
+	height : 90vh;
+}
+
+.card{
+	margin : 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(180deg, rgba(55,110,111,1) 17%, rgba(218,123,147,1) 83%);
+	flex: 0 0 30%;
+	height : 25em;
+	padding : 1em;
+	overflow-y: scroll;
+	border-radius : 1em;
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, -2px 40px 28px -8px rgba(0,0,0,0.45); 
+	box-shadow: 0px 10px 13px -7px #000000, -2px 40px 28px -8px rgba(0,0,0,0.45);
+	z-index : 3;
+
+}
+
+.card img{
+	width : 100%;
+	border-radius: 1em;
+}
+
+.card a{
+	color: black;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-decoration: none;
+    background: rgba(255,255,255,0.2);
+    border-radius: 1em;
+    padding: 1em;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    margin-top: 0.5em;
+    transition : 0.5s all;
+}
+
+.card a:hover{
+	animation : 0.5s ease-in;
+	background: rgba(255,255,255,0.5);
+}
+
+.tl{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#refresh{
+	background: transparent;
+	font-size: 2em;
+	margin : 0;
+	margin-top: 2em;
+	padding : 0;
+	cursor : pointer;
+	aspect-ratio: 1/1;
+	width : 20%;
+	font-weight: bolder;
+	border-radius : 999px;
+	border-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.maintitle{
+	position: fixed;
+    z-index: 256;
+    font-size: 12vw;
+    margin: 0 auto;
+    color: #2F4454;
+	
+
+}
+
+@media all and (max-width: 500px) {
+	#output{
+		flex-direction : column;
+		height : auto;
+	}
+
+	.card{
+		height : 30em;
+	}
+	.maintitle{
+		position: absolute;
+	}
+
+
+
+
+}
