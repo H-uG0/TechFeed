@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body {
+    background-color: #2f4454;
+    font-family: "ubuntu-title";
+}
+
+.navbar{
+	background-color: #1C3334;
+	display : flex;
+	align-items: center;
+	justify-content: center;
+	width : 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul{
+    background-color: ;
+    margin: 2em;
+    width: 60%;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li{
+    display: flex;
+    float: left;
+}
+
+.navbar li a{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.DivLogo {
+    margin: 0.7em;
+    border: 2px solid none;
+    border-radius: 10px;
+    background-color: #273744;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+
+.Logo {
+    max-width: 30%;
+    width: 100%;
+    border: 2px solid none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Titre {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: bold;
+    font-size: 300%;
+    text-align: center;
+    color: white;
+}
+
+.Titre2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.BoxTexte{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #273744;
+    font-size: 200%;
+    padding: 1em;
+    margin: 1em;;
+    border: 2px solid none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.ImagePres {
+    color: white;
+    background-color: #273744;
+    padding: 0.1em;
+    border: 2px solid none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+
+.Pres {
+    display : flex;
+    width : 100%;
+    justify-content: space-around;
+}
