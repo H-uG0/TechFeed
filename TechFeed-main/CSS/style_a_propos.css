@@ -25,7 +25,7 @@ body {
 
 .Titre {
     font-family: 'Ubuntu', sans-serif;
-    font-style: bold;
+    font-weight: bold;
     font-size: 300%;
     text-align: center;
     color: white;
