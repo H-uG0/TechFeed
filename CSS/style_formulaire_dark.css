@@ -9,8 +9,6 @@ body{
 	background-size : cover;
 	background-position : center;
 	overflow: hidden;
-
-	
 }
 
 
@@ -140,7 +138,7 @@ form + button{
 }
 
 .navbar li a{
-	font-size: 1.2vw;
+	font-size: 0.5vw;
 	backdrop-filter : blur(5px);
 	display: flex;
 	justify-content: center;
