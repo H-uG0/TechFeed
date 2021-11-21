@@ -17,7 +17,7 @@
 	<meta name="description" content="Browse the last top 10 headlines of tech world">
      <meta name="keywords" content="news, tech, high-tech, web, techfeed, top-headlines ">
      <meta name="author" content="Hugo Dessaud">
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 	<script>
 		fetch("https://gnews.io/api/v4/search?q=technology&token=1b18c12af998aa12940313754d2d4b2f")
 				.then(function (response) {
@@ -92,13 +92,9 @@
 	</label>
 
 	<section class = "tl">
-
-
 		<div id = "output">
 		</div>
-		
 	</section>
-
 
 	<div class = "spacer tltoreview">
 		<svg id="visual1" viewBox="0 0 960 220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -120,13 +116,13 @@
 	</div>
 
 	<section class = "review">
-		<p>
+		<h2>
 			<a href="http://jigsaw.w3.org/css-validator/check/referer">
 			    <img style="border:0;width:88px;height:31px"
 			        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
 			        alt="CSS Valide !" />
 			    </a>
-		</p>
+			</h2>
 	</section>
 
 </body>
