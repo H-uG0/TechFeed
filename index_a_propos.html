@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="CSS/style_a_propos.css"/>
+        <meta name="description" content="About TechFeed">
+        <meta name="keywords" content="about, news, tech, student, website">
+        <meta name="author" content="Jules Combet">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package_v0.16/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_package_v0.16/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_package_v0.16/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon_package_v0.16/site.webmanifest">
+        <link rel="mask-icon" href="./images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>Titre de page</title>
+        <meta charset="utf-8">
+        <script>
+            function toggleTheme() {
+            // Obtains an array of all <link>
+            // elements.
+            // Select your element using indexing.
+            var theme = document.getElementsByTagName('link')[0];
+  
+            // Change the value of href attribute 
+            // to change the css sheet.
+            console.log(theme.getAttribute('href'));
+            if (theme.getAttribute('href') == 'css/style_a_propos.css') {
+                theme.setAttribute('href', 'css/style_a_propos_dark.css');
+            } else {
+                theme.setAttribute('href', 'css/style_a_propos.css');
+            }
+        }
+        </script>
+
+    </head>
+    <body>
+
+        <button id = "toggleThemeButton" class = "toggleTheme" onclick="toggleTheme()">Switch</button>
+        <h1 class = "maintitle">TechFeed</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index_formulaire.html">Contact</a></li>
+                <li><a href="index_a_propos.html">About</a></li>
+            </ul>
+        </nav>
+        <label for="toggleThemeButton" class = "svgToggleTheme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10vw" height="10vh" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+            <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/></svg>
+        </label>
+
+
+        <h1 class = "Titre">Qui sommes nous ?</h1>
+        <p class = "BoxTexte">Nous sommes un groupe de 4 étudiants à l'IUT d'Aix-En-Provence en BUT Informatique . Ce site web est un projet libre sur la création d'un site web.</p>
+        <h1 class = "Titre">Présentation :</h1>
+        <p class = "BoxTexte">L'idée d'une page d'informations basées sur la technologie nous est venue assez rapidement car nous lisons assez souvent les nouveautés sur ce sujet. Cette page web nous permet donc de rassembler donc toutes les informations importantes qui peuvent intéresser n'importe qui, et qui permet de ne pas les louper</p>        
+        <h1 class = "Titre">Nous :</h1>
+
+        <div class = "Pres">
+            <h2 class = "Titre2">Jules Combet :</h2>
+            <img src = "images/Jules.png" class = "ImagePres" alt = "Jules">
+            <h2 class = "Titre2">Maxime Monterin :</h2>
+            <img src = "images/Maxime.png" class = "ImagePres" alt = "Maxime">
+            <h2 class = "Titre2">Hugo Dessaud :</h2>
+            <img src = "images/Hugo.png" class = "ImagePres" alt = "Hugo">
+            <h2 class = "Titre2">Hugo Domagé :</h2>
+            <img src = "images/Hugo2.png" class = "ImagePres" alt = "Hugo2">
+        </div> 
+
+    </body>
+</html>

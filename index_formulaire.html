@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="css/style_formulaire.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	 <meta name="description" content="Leave us a review !
+	 Techfeed : Browse the last top 10 headlines of tech world">
+     <meta name="keywords" content="news, tech, high-tech, web, techfeed, top-headlines ">
+     <meta name="author" content="Hugo Dessaud">
+     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package_v0.16/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_package_v0.16/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_package_v0.16/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon_package_v0.16/site.webmanifest">
+	<link rel="mask-icon" href="./images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>review</title>
+	<script>
+		function toggleTheme() {
+            // Obtains an array of all <link>
+            // elements.
+            // Select your element using indexing.
+            var theme = document.getElementsByTagName('link')[0];
+  
+            // Change the value of href attribute 
+            // to change the css sheet.
+            console.log(theme.getAttribute('href'));
+            if (theme.getAttribute('href') == 'css/style_formulaire.css') {
+                theme.setAttribute('href', 'css/style_formulaire_dark.css');
+            } else {
+                theme.setAttribute('href', 'css/style_formulaire.css');
+            }
+        }
+	</script>
+</head>
+<body>
+	<div class = "navigation">
+
+		<button id = "toggleThemeButton" class = "toggleTheme" onclick="toggleTheme()">Switch
+		</button>
+		<label for="toggleThemeButton" class = "svgToggleTheme">
+			<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+  			<path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/></svg>
+  		</label>
+  		
+			<h1 class = "maintitle">TechFeed</h1>
+			<nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index_formulaire.html">Contact</a></li>
+                <li><a href="index_a_propos.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class = "form">
+		<div class = "reviewFormWrapper" id="reviewFormWrapper">
+				<h1>Leave us a review !</h1>
+				<form class = "reviewForm pageclip-form" action="mailto:contact@yourdomain.com" enctype="multipart/form-data" name="EmailForm" method="post">
+					<input type="text" name="nom" id="nom" placeholder="nom">
+					<input type="email" name="email" id="email" placeholder="email">
+
+					<div class="stars">
+					  <input type="radio" id="star1" name="rating" value="1" />
+					  <input type="radio" id="star2" name="rating" value="2" />
+					  <input type="radio" id="star3" name="rating" value="3" />
+					  <input type="radio" id="star4" name="rating" value="4" />
+					  <input type="radio" id="star5" name="rating" value="5" />
+					  
+					  <label for="star1">1 star</label>
+					  <label for="star2">2 stars</label>
+					  <label for="star3">3 stars</label>
+					  <label for="star4">4 stars</label>
+					  <label for="star5">5 stars</label>
+					</div>
+
+					<textarea cols="50" rows="7" name="review"></textarea>
+					<button type="submit">submit</button>
+				</form>
+		</div>
+	</section>
+
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+</body>
+</html>
