@@ -3,3 +3,4 @@ Il s'agit d'un site web regroupant plusieurs articles, vidéos etc... sur les ne
 
 # Pour y accéder
 - Lancez le fichier ```index.html```
+- Cliquez sur ce lien https://h-ug0.github.io/TechFeed.github.io
