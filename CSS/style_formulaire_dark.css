@@ -1,0 +1,188 @@
+html, body{
+	margin : 0;
+	height : 100vh;
+}
+
+body{
+	background: black;
+	background-repeat: no-repeat;
+	background-size : cover;
+	background-position : center;
+	overflow: hidden;
+
+	
+}
+
+
+.maintitle{
+	position: fixed;
+	top : 1vw;
+	left : .5em;
+	color : white;
+	font-weight: bolder;
+	font-size: 3em;
+	margin : 1em;
+}
+
+.toggleTheme{
+	position : fixed;
+	top :0;
+	right : 0;
+	z-index : 12;
+	height : 10vh;
+	display : none;
+
+}
+
+.svgToggleTheme:after{
+	display : flex;
+	justify-content: center;
+	align-items: center;
+	width : 10vw;
+	height : 10vh;
+	top :0;
+	right : 0;
+	content : 'lightmode';
+	margin : .5rem;
+	position : fixed;
+	color : #FFF;
+	z-index : 14;
+	font-size: 11px;
+	font-weight: bolder;
+	background: transparent;
+}
+
+.svgToggleTheme{
+	position : fixed;
+	top :0;
+	right : 0;
+	z-index : 300;
+	width : 10vw;
+	height : 10vh;
+	color : rgba(255,255,255,0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin : .5rem;
+	cursor : pointer;
+
+}
+
+.svgToggleTheme svg{
+	position : fixed;
+	z-index : 0;
+
+}
+
+.form{
+	width : 100%;
+	height : 90%;
+	display : flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.reviewFormWrapper{
+	width : 50%;
+	margin-top : 3em;
+	text-align: center;
+	background:  rgba(255,255,255,0.4);
+	border-radius: 1em;
+	border-left : 1px solid white;
+	border-top : 1px solid white;
+	color : rgba(255,255,255,1);
+	font-family: sans-serif;
+}
+
+form{
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form > *{
+	border-radius: 1em;
+	margin : 1em;
+	border : none;
+	padding : 3px;
+}
+
+form + button{
+	background : white;
+}
+
+.navbar{
+	position : fixed;
+	display : flex;
+	justify-content: center;
+	align-items: center;
+	z-index : 255;
+	top : 4vw;
+	left : 50%;
+	width : 35%;
+	background : transparent;
+}
+
+.navbar ul{
+	display: flex;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+	text-decoration: none;
+	list-style-type: none;
+	flex-direction: row;
+	justify-content: space-around;
+	padding : 0;
+}
+
+.navbar li{
+	width: 30%;
+}
+
+.navbar li a{
+	font-size: 1.2vw;
+	backdrop-filter : blur(5px);
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	line-height: 20px;
+	border: #fff solid 1.7px;
+	border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+	text-decoration: none;
+	transition-property: background;
+	transition-duration: 0.5s;
+	box-shadow: inset 0 0 0 rgb(255, 255, 255), 0 0 1.5em rgb(255, 255, 255);
+}
+
+.navbar li a:hover{
+	color : black;
+	background-color: #fff;
+	box-shadow: inset 0 0 1em rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255);
+}
+
+
+.stars input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.stars label {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 6px;
+  height: 22px;
+  width: 22px;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='transparent' stroke='yellow' stroke-width='38' d='M259.216 29.942L330.27 173.92l158.89 23.087L374.185 309.08l27.145 158.23-142.114-74.698-142.112 74.698 27.146-158.23L29.274 197.007l158.89-23.088z' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  font-size: 0;
+  cursor: pointer;
+}
+
+.stars input:nth-child(1):checked ~ label:nth-of-type(-n + 1),
+.stars input:nth-child(2):checked ~ label:nth-of-type(-n + 2),
+.stars input:nth-child(3):checked ~ label:nth-of-type(-n + 3),
+.stars input:nth-child(4):checked ~ label:nth-of-type(-n + 4),
+.stars input:nth-child(5):checked ~ label:nth-of-type(-n + 5) {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='yellow' stroke='yellow' stroke-width='38' d='M259.216 29.942L330.27 173.92l158.89 23.087L374.185 309.08l27.145 158.23-142.114-74.698-142.112 74.698 27.146-158.23L29.274 197.007l158.89-23.088z' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}

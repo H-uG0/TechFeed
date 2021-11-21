@@ -2,9 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="CSS/style_Hugo.css">
+	<link rel="stylesheet" type="text/css" href="css/style_index.css">
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package_v0.16/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_package_v0.16/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_package_v0.16/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon_package_v0.16/site.webmanifest">
+	<link rel="mask-icon" href="./images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<title>TechFeed</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="description" content="Browse the last top 10 headlines of tech world">
+     <meta name="keywords" content="news, tech, high-tech, web, techfeed, top-headlines ">
+     <meta name="author" content="Hugo Dessaud">
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 	<script>
 		fetch("https://gnews.io/api/v4/search?q=technology&token=13c3018e3c272c8e867916df81791fb5")
@@ -25,12 +37,25 @@
 
 		    	});
 
+		function toggleTheme() {
+            // Obtains an array of all <link>
+            // elements.
+            // Select your element using indexing.
+            var theme = document.getElementsByTagName('link')[0];
+  
+            // Change the value of href attribute 
+            // to change the css sheet.
+            console.log(theme.getAttribute('href'));
+            if (theme.getAttribute('href') == 'css/style_index.css') {
+                theme.setAttribute('href', 'css/style_index_dark.css');
+            } else {
+                theme.setAttribute('href', 'css/style_index.css');
+            }
+        }
+
 	</script>
 </head>
 <body>
-	<nav class="navbar">
-    </nav>
-
 	<div class = "spacer navbartotl">
 		<svg id="visual" viewBox="0 0 960 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 			<g>
@@ -50,8 +75,21 @@
                	morphPrecision:2}
 				).start();
 		</script>
+
+		<button id = "toggleThemeButton" class = "toggleTheme" onclick="toggleTheme()">Switch</button>
 		<h1 class = "maintitle">TechFeed</h1>
+		<nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index_formulaire.html">Contact</a></li>
+                <li><a href="index_a_propos.html">About</a></li>
+            </ul>
+        </nav>
 	</div>
+	<label for="toggleThemeButton" class = "svgToggleTheme">
+			<svg xmlns="http://www.w3.org/2000/svg" width="10vw" height="10vh" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+  			<path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/></svg>
+	</label>
 
 	<section class = "tl">
 
@@ -82,6 +120,13 @@
 	</div>
 
 	<section class = "review">
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			    <img style="border:0;width:88px;height:31px"
+			        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+			        alt="CSS Valide !" />
+			    </a>
+		</p>
 	</section>
 
 </body>
