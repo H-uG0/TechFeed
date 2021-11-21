@@ -3,33 +3,8 @@
 body {
     background-color: #293133;
     font-family: "ubuntu-title";
-    padding-top : 10%
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar ul{
-    margin: 2em;
-    width: 60%;
-    color: white;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar li{
-    display: flex;
-    float: left;
-}
-
-.navbar li a{
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    color: white;
-    text-decoration: none;
+    padding-top : 10%;
+    overflow-x: hidden;
 }
 .DivLogo {
     border: 2px solid none;
@@ -93,14 +68,6 @@ nav {
     width : 10%;
 }
 
-.navbar{
-    background-color: #1C3334;
-    display : flex;
-    align-items: center;
-    justify-content: center;
-    width : 100%;
-}
-
 svg{
     position : fixed;
     z-index : 10;
@@ -110,10 +77,9 @@ svg{
     position: absolute;
     top : 0;
     z-index: 256;
-    font-size: 12vw;
+    font-size: 10vw;
     margin: 0 auto;
     color: white;
-    background-color: rgba(0,0,0,0.5);
     
 
 }
@@ -196,7 +162,7 @@ svg{
 }
 
 .navbar li a{
-    font-size: 1.2vw;
+    font-size: 0.5vw;
     backdrop-filter : blur(5px);
     display: flex;
     justify-content: center;
