@@ -31,7 +31,6 @@ body{
 	z-index : 12;
 	height : 10vh;
 	display : none;
-
 }
 
 .svgToggleTheme:after{
