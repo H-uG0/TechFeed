@@ -5,6 +5,7 @@ body, html{
 
 body{
 	background-color: #2F4454;
+	overflow-x : hidden;
 }
 
 .spacer{
