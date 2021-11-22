@@ -193,10 +193,14 @@ form + button{
 		width : 90%;
 	}
 	.maintitle{
-	top : 1.5rem;
-	left : 1rem;
-	margin : 0;
-	font-size: 2em;
-}
+		top : 1.5rem;
+		left : 1rem;
+		margin : 0;
+		font-size: 2em;
+	}
+	.navbar{
+		height : 10%;
+		top : 90%;
+	}
 
 }
