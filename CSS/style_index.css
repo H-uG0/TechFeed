@@ -34,6 +34,7 @@ body{
 svg{
 	position : fixed;
 	z-index : 10;
+	width : 100%;
 }
 
 #visual1{
@@ -173,7 +174,6 @@ svg{
 
 .svgToggleTheme svg{
 	position : fixed;
-	width : 100%;
 
 }
 
